@@ -1,1 +1,20 @@
 /* Lucas Ley Berben UO295228 */
+body{
+    font-family:  Arial, sans-serif;
+    color : black;
+    background-color: white;
+}
+
+header{
+    background-color: #ff0000;
+ 
+}
+h1{
+    color : #000000;
+
+}
+nav{
+
+    color : #000000;
+
+}
