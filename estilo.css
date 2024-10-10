@@ -15,9 +15,29 @@ header{
     color : black;
     text-align: center;
     text-decoration: none; 
+
+    display: flex;
+    justify-content: space-between;  /* Distribuye el espacio entre el h1 y nav */
+    align-items: center;  /* Alinea verticalmente al centro */
+    padding: 10px 20px;  /* Espaciado alrededor del header */
+    background-color: #f4f4f4;  /* Color de fondo del encabezado */
+    border-bottom: 2px solid #ddd;  /* Línea de separación */
    
     
  
+}
+header nav{
+font-size: 1.2em;
+gap: 15px;  /* Espacio entre los enlaces del menú de navegación */
+color : #000000;
+    
+}
+header nav a{
+    color : #000000;
+padding: 5px;
+}
+h2{
+    font-size: 1.2em;
 }
 h1 a{
     color : black;
@@ -26,12 +46,15 @@ h1 a{
     
     
     font-weight: bold; 
+
+    
    
 
 }
 a{
     text-decoration: none;
-    color : black; 
+    color : white;
+     
 
 }
 ul{
@@ -63,8 +86,72 @@ ol li{
 
 
 
-nav{
 
-    color : #000000;
 
+/* Estilos generales para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin-bottom: 20px;
 }
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+th, td {
+  
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #B30000;
+}
+
+tr:nth-child(even) {
+    background-color:#B30000;;
+}
+/* Adaptabilidad de videos */
+video {
+    width: 100%;  /* El video ocupará el 100% del ancho del contenedor */
+    height: auto; /* Mantendrá la proporción del video automáticamente */
+}
+
+/* Adaptación del header a pantallas pequeñas */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* El header se apila en lugar de estar en línea */
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 1.5em; /* Reduce el tamaño del h1 */
+    }
+
+    header nav {
+        flex-direction: column; /* Los enlaces del menú se apilan verticalmente */
+        gap: 10px;
+    }
+    
+    /* Ocultar las migas de navegación en dispositivos móviles */
+    p {
+        display: none; /* No se muestran las migas en pantallas pequeñas */
+    }
+}
+
+/* Adaptación para pantallas extra pequeñas (dispositivos móviles) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2em; /* Reduce aún más el tamaño del h1 */
+    }
+
+    header nav a {
+        font-size: 1em; /* Disminuye el tamaño de los enlaces de navegación */
+        padding: 5px;
+    }
+}
+
